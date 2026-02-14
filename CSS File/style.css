@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+:root{
+    --main-color: #544349;
+    --secondary-color: #F3E7D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #EEE;
+}
+
+.btn{
+    background-color: #FFF;
+    border: 1px solid var(--main-color);
+    outline: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #FFF;
+    background-color: var(--main-color);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header h2{
+    color: #333;
+    letter-spacing: 1px;
+}
+
+header .logo i{
+    color: var(--main-color);
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+header .search-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header .search-box input{
+    flex-grow: 1;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: none;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: #FFF;
+}
+
+header .search-box button{
+    height: 35px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .btn-box{
+    display: flex;
+    gap: 10px;
+}
+
+header .btn-box button{
+    font-size: 1rem;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
