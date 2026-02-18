@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+:root{
+    --main-color: #544349;
+    --secondary-color: #F3E7D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #EEE;
+    height: 100dvh;
+}
+
+.btn{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--main-color);
+    background-color: #FFF;
+}
