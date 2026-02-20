@@ -23,6 +23,10 @@ header .panel-2{
     width: 100%;
 }
 
+header .panel-2 #close-panel{
+    display: none;
+}
+
 header .panel-2 .pages-box{
     display: flex;
     gap: 2.5rem;
@@ -39,13 +43,21 @@ header .panel-2 .icon-box{
     justify-content: center;
 }
 
-header .panel-2 .icon-box i{
+header .panel-2 .icon-box .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #666;
     cursor: pointer;
-    margin: 0 2px;
+    margin: 0 3px;
 }
 
-header .panel-2 .icon-box i:hover{
+header .panel-2 .icon-box .icon span{
+    margin-left: 5px;
+    display: none;
+}
+
+header .panel-2 .icon-box .icon:hover{
     color: var(--main-color);
 }
 
@@ -119,6 +131,21 @@ header .btn-box #search-btn{
     display: none;
 }
 
+header .panel-2 .menu-signature{
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+header .panel-2 .menu-signature h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: .5rem;
+    color: var(--main-color);
+}
+
 @media (max-width: 950px) {
 
     header .search-box{
@@ -147,23 +174,67 @@ header .btn-box #search-btn{
     header .panel-2{
         position: absolute;
         top: 0;
-        left: 0;
+        left: -40%;
         width: 40%;
         height: 100dvh;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    header .panel-2.active{
+        left: 0;
     }
 
     header .panel-2 .pages-box{
         flex-direction: column;
+        margin: 1rem 0;
+        gap: 0;
     }
 
+    header .panel-2 .pages-box a{
+        line-height: 1.5;
+        margin: 13px 0;
+    }
+
+    header .panel-2 .icon-box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+    
+    header .panel-2 .icon-box .icon:hover{
+        padding-left: 8px;
+    }
+
+    header .panel-2 .icon-box .icon span{
+        display: block;
+    }
+
+    header .panel-2 #close-panel{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    header .panel-2 .menu-signature{
+        display: block;
+        
+    }
+    
 }
+
+
 
 @media (max-width: 750px) {
     header .panel-1{
         padding: 1rem;
     }
 }
+
+
+
 
 @media (max-width: 480px) {
     header .panel-1{
@@ -192,4 +263,9 @@ header .btn-box #search-btn{
         justify-content: center;
     }
     
+    header .panel-2{
+        width: 50%;
+        left: -50%;
+    }
+
 }
