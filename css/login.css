@@ -78,3 +78,21 @@
     border-radius: .5rem;
     padding: 4px 0;
 }
+
+@media (max-width: 950px) {
+    .login-box{
+        width: 40%;
+    }
+}
+
+@media (max-width: 750px) {
+    .login-box{
+        width: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box{
+        width: 65%;
+    }
+}
