@@ -15,19 +15,21 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('change', (e) => {
-    console.log('CHANGE:', e.target);
-    if (e.target.id === 'pass-show') {
-        const passLabel = document.getElementById('pass-label');
-        const passInput = document.getElementById('user_password');
-        
-        if (!passInput || !passLabel) return;
 
-        if (e.target.checked) {
-            passLabbel.innerHTML = 'hide password';
-            passInput.type = 'text';
-        } else {
-            passLabbel.innerHTML = 'hide password';
-            passInput.type = 'text';
-        }
-    }
-})
+  // handle checkbox even if label is clicked
+  const checkbox = e.target.closest('#pass_show');
+  if (!checkbox) return;
+
+  const passInput = document.getElementById('user_password');
+  const passLabel = document.getElementById('pass-label');
+
+  if (!passInput || !passLabel) return;
+
+  if (checkbox.checked) {
+    passInput.type = 'text';
+    passLabel.innerText = 'hide password';
+  } else {
+    passInput.type = 'password';
+    passLabel.innerText = 'show password';
+  }
+});

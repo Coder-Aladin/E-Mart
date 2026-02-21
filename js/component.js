@@ -5,5 +5,5 @@ const loadComponents = async (url, boxId) => {
     document.getElementById(boxId).innerHTML = data;
 };
 
-loadComponents("components/navbar.html", "login-box");
+loadComponents("components/login.html", "login-box");
 loadComponents("components/navbar.html", "navbar");
