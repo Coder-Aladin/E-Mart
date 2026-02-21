@@ -46,3 +46,8 @@ a:hover{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
+
+.page-active{
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}

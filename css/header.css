@@ -237,9 +237,6 @@ header .panel-2 .menu-signature h2{
 
 
 @media (max-width: 480px) {
-    header .panel-1{
-        padding: .75rem;
-    }
 
     header .logo #menu-btn{
         font-size: 1.7rem;

@@ -13,77 +13,13 @@
 
 </head>
 <body>
-    <div class="login-box">
-        <i id="close-login" class="material-symbols-outlined">close</i>
-        <h2>log in</h2>
-        <form>
-            <div class="box">
-                <label for="user_name">user name</label>
-                <input id="user_name" type="text" placeholder="name_123" required>
-            </div>
-            <div class="box">
-                <label for="user_email">email</label>
-                <input id="user_email" type="email" placeholder="name@gmail.com" required>
-            </div>
-            <div class="box">
-                <label for="user_num">number</label>
-                <input id="user_num" type="tel" placeholder="+91 XXXXXXXXXX" required>
-            </div>
-            <div class="box">
-                <label for="user_password">password</label>
-                <input id="user_password" type="password" placeholder="Must be atleast 8 charcter" required>
-                <div class="pass-box">
-                    <label id="pass-label" for="pass_show">show password</label>
-                    <input id="pass_show" type="checkbox">
-                </div>
-            </div>
-            <button class="btn" type="submit">login</button>
-        </form>
-    </div>
+
     <header>
-        <div class="panel-1">
-            <div class="logo">
-                <i class="material-symbols-outlined btn" id="menu-btn">menu</i>
-                <i class="material-symbols-outlined" id="logo">shopping_cart</i>
-                <h2>E-Mart</h2>
-            </div>
-
-             <div class="search-box">
-                <input id="search-input" type="text" placeholder="search products">
-                <button class="btn" type="submit"><i class="material-symbols-outlined">search</i></button>
-            </div>
-
-            <div class="btn-box">
-                <button class="btn" id="search-btn" type="button"><i class="material-symbols-outlined">search</i></button>
-                <button class="btn login-btn" type="button">sign in</button>
-                <button class="btn login-btn" type="button">log in</button>
-            </div>
-        </div>
-
-        <div class="panel-2">
-            <i class="material-symbols-outlined btn" id="close-panel">close</i>
-            <div class="pages-box">
-                <a href="">home</a>
-                <a href="">services</a>
-                <a href="">categories</a>
-                <a href="">events</a>
-                <a href="">products</a>
-                <a href="">contact</a>
-            </div>
-            <div class="icon-box">
-                <div class="icon"><i class="material-symbols-outlined">favorite</i><span>wishlist</span></div>
-                <div class="icon"><i class="material-symbols-outlined">shopping_bag</i><span>cart</span></div>
-                <div class="icon"><i class="material-symbols-outlined">account_circle</i><span>account</span></div>
-            </div>
-            <div class="menu-signature">
-                <h2>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                    e-mart
-                </h2>
-            </div>
-        </div>
+        <div id="login-box"></div>
+        <div id="navbar"></div>
     </header>
 
+    <script src="js/component.js"></script>
     <script src="js/login.js"></script>
     <script src="js/header.js"></script>
 </body>

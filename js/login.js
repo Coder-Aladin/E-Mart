@@ -1,28 +1,33 @@
-const loginBtns = document.querySelectorAll('.login-btn');
-const loginBox = document.querySelector('.login-box');
+document.addEventListener('click', (e) => {
 
-const closeBtn = document.getElementById('close-login');
+  // OPEN LOGIN
+  if (e.target.closest('#login-btn')) {
+    const loginBox = document.querySelector('.login-box');
+    if (loginBox) loginBox.style.display = 'block';
+  }
 
-const passInput = document.getElementById('user_password');
-const passLabbel = document.getElementById('pass-label');
-const passCheck = document.getElementById('pass_show');
+  // CLOSE LOGIN
+  if (e.target.closest('#close-login')) {
+    const loginBox = document.querySelector('.login-box');
+    if (loginBox) loginBox.style.display = 'none';
+  }
 
-loginBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        loginBox.style.display = 'block';
-    })
 });
 
-closeBtn.addEventListener('click', () => {
-    loginBox.style.display = 'none';
-})
+document.addEventListener('change', (e) => {
+    console.log('CHANGE:', e.target);
+    if (e.target.id === 'pass-show') {
+        const passLabel = document.getElementById('pass-label');
+        const passInput = document.getElementById('user_password');
+        
+        if (!passInput || !passLabel) return;
 
-passCheck.addEventListener('change', () => {
-    if(passCheck.checked){
-        passInput.type = 'text';
-        passLabbel.innerHTML = 'hide password';
-    } else {
-        passInput.type = 'password';
-        passLabbel.innerHTML = 'show password';
+        if (e.target.checked) {
+            passLabbel.innerHTML = 'hide password';
+            passInput.type = 'text';
+        } else {
+            passLabbel.innerHTML = 'hide password';
+            passInput.type = 'text';
+        }
     }
 })

@@ -17,3 +17,4 @@ menuOpen.addEventListener('click', () => {
 menuClose.addEventListener('click', () => {
     menuBox.classList.toggle('active');
 });
+
