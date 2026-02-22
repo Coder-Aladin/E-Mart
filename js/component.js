@@ -1,4 +1,4 @@
-const loadComponents = async (url, boxId) => {
+const loadComponents = async (url, boxId,) => {
     const response = await fetch(url);
     const data = await response.text();
 
