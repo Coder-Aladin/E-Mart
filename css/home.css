@@ -1,5 +1,81 @@
 .sec-home{
-    margin-top: 8rem;
-    height: 450px;
+    margin-top: 4rem;
+    height: 325px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-home .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-home .content h2{
+    line-height: 1.5;
+    font-size: 1.65rem;
+}
+
+.sec-home .content h2 span{
+    color: var(--main-color);
+}
+
+.sec-home .content p{
+    color: #666;
+    line-height: 1.5;
+    width: 75%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sec-home .content .btn-box{
+    display: flex;
+    gap: 10px;
+}
+
+.sec-home .content .btn-box button{
+    padding: 5px 15px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 750px) {
+
+    .sec-home{
+        height: 300px;
+    }
+
+    .sec-home .content h2{
+        font-size: 1.45rem;
+    }
+
+    .sec-home .content p{
+        font-size: .9rem;
+    }
+
+    .sec-home .content .btn-box button{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sec-home{
+        height: 275px;
+    }
+
+    .sec-home .content h2{
+        font-size: 1.3rem;
+    }
+
+    .sec-home .content p{
+        font-size: .8rem;
+    }
+
+    .sec-home .content .btn-box button{
+        font-size: .7rem;
+    }
 }
