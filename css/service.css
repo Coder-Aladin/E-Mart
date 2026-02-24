@@ -17,11 +17,18 @@
     gap: 15px;
     flex-direction: column;
     align-items: center;
+    outline: 1px solid #999;
+    outline-offset: -7px;
+}
+
+.sec-service .box-container .box:hover{
+    outline: 1px solid var(--main-color);
+    outline-offset: 0px;
 }
 
 .sec-service .box-container .box img{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 
@@ -33,4 +40,17 @@
 
 .sec-service .box-container .box a{
     padding: 3px 6px;
+}
+
+@media (max-width: 480px) {
+
+    .sec-service .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+
+    .sec-service .box-container .box img{
+        height: 150px;
+        width: 150px;
+    }
+
 }

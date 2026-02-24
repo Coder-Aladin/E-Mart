@@ -1,0 +1,20 @@
+.sec-cat .cat-container{
+    margin-top: 2rem;
+}
+
+.sec-cat .cat-container .box-container .box{
+    background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    padding: 1rem;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid #999;
+    outline-offset: -7px;
+}
+
+.sec-cat .cat-container .box-container .box:hover{
+    outline: 1px solid var(--main-color);
+    outline-offset: 0px;
+}
