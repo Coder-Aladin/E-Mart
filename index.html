@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/service.css">
     <link rel="stylesheet" href="css/category.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
@@ -28,8 +30,8 @@
             <h2>everything you <span>love.</span> in one place</h2>
             <p>Trendy fashion, latest gadgets, daily essentials — all at prices you’ll love. Start shopping with E-Mart today!</p>
             <div class="btn-box">
-                <button class="btn">start shopping</button>
-                <button class="btn">view categories</button>
+                <a class="btn">start shopping</a>
+                <a href="#sec-cat" class="btn">view categories</a>
             </div>
         </div>
     </section>
@@ -40,21 +42,21 @@
         
         <div class="box-container">
             <div class="box">
-                <img src="img/category/serv_01.png" alt="">
+                <img src="img/service/serv_01.png" alt="">
                 <h3>fast delivery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, itaque.</p>
                 <a href="" class="btn">start shopping</a>
             </div>
 
             <div class="box">
-                <img src="img/category/serv_02.png" alt="">
+                <img src="img/service/serv_02.png" alt="">
                 <h3>easy return</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, itaque.</p>
                 <a href="" class="btn">start shopping</a>
             </div>
 
             <div class="box">
-                <img src="img/category/serv_03.png" alt="">
+                <img src="img/service/serv_03.png" alt="">
                 <h3>secure payment</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, itaque.</p>
                 <a href="" class="btn">start shopping</a>
@@ -66,60 +68,60 @@
     <section class="sec-cat" id="sec-cat">
         <h2 class="heading">products <span>categories</span></h2>
 
-        <div class="cat-container">
+        <div class="cat-container swiper">
 
-            <div class="box-container">
-                <div class="box">
-                    <img src="" alt="">
+            <div class="box-container swiper-wrapper">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_01.png" alt="">
                     <h3>electronics</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_02.png" alt="">
                     <h3>fashion</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_03.png" alt="">
                     <h3>home & kitchen</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_04.png" alt="">
                     <h3>beauty & personal care</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_05.png" alt="">
                     <h3>appliances</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_06.png" alt="">
                     <h3>books & stationary</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_07.png" alt="">
                     <h3>sports & fitness</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
                 </div>
 
-                <div class="box">
-                    <img src="" alt="">
+                <div class="box swiper-slide">
+                    <img src="img/category/cat_08.png" alt="">
                     <h3>automobile accessories</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime.</p>
                     <a href="" class="btn">start shopping</a>
@@ -132,5 +134,7 @@
     <script src="js/component.js"></script>
     <script src="js/login.js"></script>
     <script src="js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/category.js"></script>
 </body>
 </html>

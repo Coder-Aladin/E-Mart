@@ -1,5 +1,6 @@
 .sec-cat .cat-container{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    padding: .5rem;
 }
 
 .sec-cat .cat-container .box-container .box{
@@ -12,9 +13,26 @@
     align-items: center;
     outline: 1px solid #999;
     outline-offset: -7px;
+    transition: all .2s linear;
 }
 
 .sec-cat .cat-container .box-container .box:hover{
     outline: 1px solid var(--main-color);
     outline-offset: 0px;
+}
+
+.sec-cat .box-container .box img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.sec-cat .box-container .box p{
+    text-align: center;
+    color: #666;
+    line-height: 1.5;
+}
+
+.sec-cat .box-container .box a{
+    padding: 3px 6px;
 }
