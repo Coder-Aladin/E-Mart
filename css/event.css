@@ -1,0 +1,28 @@
+.sec-event{
+    padding-top: 3rem;
+}
+
+.sec-event .box-container{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.sec-event .box-container .box{
+    background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    padding: 1rem;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec-event .box-container .box:hover{
+    transform: scale(1.04);
+}
