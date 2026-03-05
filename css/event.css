@@ -40,3 +40,37 @@
     color: #333;
     font-size: .9rem;
 }
+
+.sec-event .box-container .box .discounts{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.sec-event .box-container .box .date{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: red;
+    letter-spacing: 1px;
+}
+
+.sec-event .box-container .box .icon-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+
+.sec-event .box-container .box .img-box img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    background-color: #FFF;
+}
+
+.sec-event .box-container .box a{
+    padding: 5px 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
