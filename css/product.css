@@ -1,3 +1,13 @@
 .sec-product{
     padding-top: 3rem;
 }
+
+.sec-product .box-container{
+    padding: 1rem;
+}
+
+.sec-product .box-container .product-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
