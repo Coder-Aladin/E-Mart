@@ -6,8 +6,31 @@
     padding: 1rem;
 }
 
-.sec-product .box-container .product-box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1rem;
+.sec-product .box-container .product-box .product-card{
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #FFF;
+}
+
+.sec-product .box-container .product-box .product-card .saveBtn{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.sec-product .box-container .product-box .product-card img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.sec-product .box-container .product-box .product-card .btn-box{
+    display: flex;
+    justify-content: center;
+}
+
+.sec-product .box-container .product-box .product-card .btn-box a{
+    width: 50%;
+    text-align: center;
 }
