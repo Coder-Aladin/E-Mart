@@ -1,29 +1,35 @@
+const cardContainer = document.querySelectorAll('.product-wrapper');
+
 window.onload = function () {
     fetchProducts();
 };
 
 const fetchProducts = async () => {
-    const url = 'https://dummyjson.com/products'
 
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    const info = data.products
+    cardContainer.forEach(async (box) => {
+        
+        let url = `https://dummyjson.com/products/category/${box.getAttribute('id')}`
 
-    console.log(info);
-    
-    showingDetail(info)
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        const info = data.products
+
+        console.log(info);
+        
+        showingDetail(info)
+    });
+
 }
 
 const showingDetail = (info) => {
 
-    const cardContainer = document.querySelector('.product-box')
-
-    info.forEach(detail => {
-        let card = `
+    info.forEach(data => {
+        let productCard = `
+        <div class="product-card">
             <div class="saveBtn"><i class="material-symbols-outlined" id="save-icon">bookmark</i></div>
-            <img src="${detail.thumbnail}" alt="">
-            <h3>${detail.title}</h3>
+            <img src="${data.thumbnail}" alt="">
+            <h3>${data.title}</h3>
             <p>product description</p>
             <p><i class="fa-solid fa-star"></i> 4.5</p>
             <p>discounts</p>
@@ -32,9 +38,14 @@ const showingDetail = (info) => {
                 <a href="" class="btn">shop now</a>
                 <a href="" class="btn">add to cart</a>
             </div>
-        `
+        </div>
+    `
 
-        cardContainer.innerHTML += card
+        cardContainer.forEach(cards => {
+            
+            cards.innerHTML += productCard
+
+        });
     });
 
 }
