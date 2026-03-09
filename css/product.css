@@ -3,12 +3,23 @@
 }
 
 .sec-product .box-container{
+    margin: 1rem;
     padding: 1rem;
 }
 
+.sec-product .box-container .product-wrapper .product-card{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
 .sec-product .box-container .product-wrapper .product-card .saveBtn{
-   display: flex;
-   justify-content: flex-end;
+   position: absolute;
+   top: 5px;
+   right: 5px;
 }
 
 .sec-product .box-container .product-wrapper .product-card img{
