@@ -2,38 +2,99 @@
     padding-top: 3rem;
 }
 
+.sec-product h2{
+    margin-bottom: 2.5rem;
+}
+
 .sec-product .box-container{
     margin: 1rem;
-    padding: 1rem;
+    padding: .5rem;
+    height: fit-content;
 }
 
 .sec-product .box-container .product-wrapper .product-card{
     background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: .5rem;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid #999;
+    outline-offset: -7px;
+    transition: all .2s linear;
+    height: inherit;
+}
+
+.sec-product .box-container .product-wrapper .product-card:hover{
+    outline: 1px solid var(--main-color);
+    outline-offset: 0px;
 }
 
 .sec-product .box-container .product-wrapper .product-card .saveBtn{
    position: absolute;
-   top: 5px;
-   right: 5px;
+   top: 12px;
+   right: 12px;
+   cursor: pointer;
 }
 
 .sec-product .box-container .product-wrapper .product-card img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
 }
 
-.sec-product .box-container .product-wrapper .product-card .btn-box{
+.sec-product .box-container .product-wrapper .product-card .content{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .5rem;
 }
 
-.sec-product .box-container .product-wrapper .product-card .btn-box a{
+.product-wrapper .product-card .content h3{
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.product-wrapper .product-card .content .cat{
+    color: #666;
+}
+
+.product-wrapper .product-card .content .rat{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+
+.product-wrapper .product-card .content .rat i{
+    color: darkorange;
+}
+
+.product-wrapper .product-card .content .discount{
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.product-wrapper .product-card .content .price{
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.product-wrapper .product-card .btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-wrapper .product-card .btn-box a{
     width: 50%;
     text-align: center;
+    padding: 2px 0;
+    font-size: 1rem;
 }
