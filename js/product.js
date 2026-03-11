@@ -21,7 +21,7 @@ async function fetchProducts() {
         
             let productCard = `
                 <div class="product-card swiper-slide">
-                    <div class="saveBtn"><i class="material-symbols-outlined" id="save-icon">bookmark</i></div>
+                    <div class="save-Btn"><i class="material-symbols-outlined saveBtn" id="save-icon">bookmark</i></div>
                     <img src="${card.thumbnail}" alt="">
                     <div class="content">
                       <h3>${card.title}</h3>
@@ -40,6 +40,35 @@ async function fetchProducts() {
             wrapper.innerHTML += productCard;
 
         });
+
+
+        wrapper.addEventListener('click', (e) => {
+
+          const btn = e.target.closest(".save-Btn");
+
+          if (btn) {
+
+            const icon = btn.querySelector("#save-icon");
+
+            let saveCount = 0
+
+            if (icon.textContent === "bookmark") {
+              icon.textContent = "bookmark_added";
+              saveCount++
+              wishAdd(saveCount)
+            } 
+            else {
+              icon.textContent = "bookmark";
+              saveCount--
+              wishRemove(saveCount)
+            }
+
+          }
+
+        });
+
+
+
 
     }
 
