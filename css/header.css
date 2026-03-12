@@ -61,6 +61,24 @@ header .panel-2 .icon-box .icon:hover{
     color: var(--main-color);
 }
 
+header .panel-2 .icon-box .icon .save-count{
+    position: absolute;
+    top: 69px;
+    right: 102px;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: .7rem;
+    font-weight: 500;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
 header .logo{
     display: flex;
     align-items: center;
@@ -221,6 +239,11 @@ header .panel-2 .menu-signature h2{
     header .panel-2 .menu-signature{
         display: block;
         
+    }
+
+    header .panel-2 .icon-box .icon .save-count{
+        top: 326px;
+        left: 21px;
     }
     
 }

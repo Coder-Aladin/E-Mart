@@ -1,5 +1,7 @@
 const cardWrappers = document.querySelectorAll('.product-wrapper');
 
+let saveCount = 0;
+
 window.onload = function () {
     fetchProducts();
 };
@@ -50,8 +52,6 @@ async function fetchProducts() {
 
             const icon = btn.querySelector("#save-icon");
 
-            let saveCount = 0
-
             if (icon.textContent === "bookmark") {
               icon.textContent = "bookmark_added";
               saveCount++
@@ -97,3 +97,34 @@ var swiper = new Swiper(".sec-product .box-container", {
     },
   },
 });
+
+
+function wishAdd(saveCount) {
+  
+  const addBtn = document.getElementById('save-count');
+
+  if (saveCount > 0) {
+    addBtn.style.visibility = 'visible';
+    addBtn.innerText = saveCount;
+  } else {
+    addBtn.style.visibility = 'hidden';
+  }
+
+}
+
+function wishRemove(saveCount) {
+  
+  const addBtn = document.getElementById('save-count');
+
+  if (saveCount === 0) {
+    addBtn.style.visibility = 'hidden';
+  } else {
+    addBtn.style.display = 'visible';
+    addBtn.innerText = saveCount;
+  }
+
+}
+
+document.addEventListener('click', (e) => {
+  
+})
