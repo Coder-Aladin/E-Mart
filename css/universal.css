@@ -51,11 +51,6 @@ a:hover{
     border-bottom: 1px solid var(--main-color);
 }
 
-.page-active{
-    color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
-}
-
 .heading{
     text-align: center;
     color: var(--main-color);
