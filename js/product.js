@@ -29,8 +29,8 @@ async function fetchProducts() {
                       <h3>${card.title}</h3>
                       <p class="cat">category - ${card.category}</p>
                       <p class="rat"><i class="fa-solid fa-star"></i> ${card.rating}</p>
-                      <p class="discount">$${card.discountPercentage}% off</p>
-                      <p class="price">price - $${card.price} -/</p>
+                      <p class="discount">${card.discountPercentage}% off</p>
+                      <p class="price">$${card.price} -/</p>
                     </div>  
                     <div class="btn-box">
                           <a href="" class="btn">shop now</a>

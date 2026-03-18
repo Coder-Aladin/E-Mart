@@ -1,3 +1,86 @@
 .sec-feature{
     padding-top: 3rem;
 }
+
+.sec-feature .box-container{
+    margin: 1rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.sec-feature .box-container .box{
+    background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid #999;
+    outline-offset: -5px;
+    transition: all .2s linear;
+}
+
+.sec-feature .box-container .box:hover{
+    outline: 1px solid var(--main-color);
+    outline-offset: 0px;
+}
+
+.sec-feature .box-container .box img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sec-feature .box-container .box h3{
+    width: 100%;
+    color: #333;
+}
+
+.sec-feature .box-container .box p{
+    width: 100%;
+}
+
+.sec-feature .box-container .box .cat{
+    color: #666;
+    font-size: .9rem;
+}
+
+.sec-feature .box-container .box .rat{
+    margin-top: 5px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+}
+
+.sec-feature .box-container .box .rat i{
+    color: darkorange;
+}
+
+.sec-feature .box-container .box .dis{
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.sec-feature .box-container .box .price{
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.sec-feature .box-container .box .btn-box{
+    width: 100%;
+    display: flex;
+}
+
+.sec-feature .box-container .box .btn-box a{
+    width: 50%;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2px 0;
+}
