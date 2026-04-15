@@ -1,0 +1,145 @@
+footer{
+    padding: 2rem;
+    background-color: #FFF;
+}
+
+footer .box1 .pages-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .box1 .pages-container .box{
+    width: 20%;
+}
+
+footer .box1 .pages-container .b1 .logo-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+footer .box1 .pages-container .b1 .logo-box i{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+footer .box1 .pages-container .b1 p{
+    margin: 20px 0;
+    color: #666;
+}
+
+footer .box1 .pages-container .b1 .icon-box{
+    display: flex;
+    gap: 10px;
+}
+
+footer .box1 .pages-container .b1 .icon-box .icon{
+    background-color: #EEE;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+footer .box1 .pages-container .b1 .icon-box .icon:hover{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+footer .box1 .pages-container .b2 h2{
+    margin-bottom: 15px;
+}
+
+footer .box1 .pages-container .b2 p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    color: #333;
+    text-transform: none;
+}
+
+footer .box1 .pages-container .b2 i{
+    color: var(--main-color);
+    font-weight: 550;
+}
+
+footer .box1 .pages-container .b3 h2{
+    margin-bottom: 5px;
+}
+
+footer .box1 .pages-container .b3 p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+footer .box1 .pages-container .b3 p i{
+    color: var(--main-color);
+    font-weight: 550;
+}
+
+footer .box1 .pages-container .b3 p a{
+    border-bottom: none;
+}
+
+footer .box1 .pages-container .b3 p a:hover{
+    padding-left: 15px;
+}
+
+footer .box1 .pages-container .b4 h2{
+    margin-bottom: 10px;
+}
+
+footer .box1 .pages-container .b4 p{
+    color: #333;
+}
+
+footer .box1 .pages-container .b4 input{
+    background-color: #EEE;
+    border: none;
+    text-transform: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    border-radius: .5rem;
+    color: var(--main-color);
+    outline: 1px solid var(--main-color);
+}
+
+footer .box1 .pages-container .b4 a{
+    margin-top: .5rem;
+    padding: .2rem;
+}
+
+footer .box2{
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #666;
+    padding-top: 2rem;
+}
+
+footer .box2 p{
+    font-size: 1.2rem;
+    color: #333;
+}
+
+footer .box2 p span{
+    color: var(--main-color);
+    font-weight: 575;
+}
+
+
+@media (max-width: 1130px) {
+    
+    footer .box1 .pages-container{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+}
