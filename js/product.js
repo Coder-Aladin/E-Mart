@@ -55,12 +55,16 @@ async function fetchProducts() {
             if (icon.textContent === "bookmark") {
               icon.textContent = "bookmark_added";
               saveCount++
-              wishAdd(saveCount)
+              localStorage.setItem("sc", saveCount)
+              console.log(localStorage.getItem(sc));
+              wishAdd(localStorage.getItem(sc))
             } 
             else {
               icon.textContent = "bookmark";
               saveCount--
-              wishRemove(saveCount)
+              localStorage.setItem("sc", saveCount)
+              console.log(localStorage.getItem(sc));
+              wishRemove(localStorage.getItem(sc))
             }
 
           }
