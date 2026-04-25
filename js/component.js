@@ -6,4 +6,8 @@ const loadComponents = async (url, boxId,) => {
 };
 
 loadComponents("components/login.html", "login-box");
-loadComponents("components/navbar.html", "navbar");
+loadComponents("components/navbar.html", "navbar").then(() => {
+    if (typeof initializeSaveCount === 'function') {
+        initializeSaveCount();
+    }
+});

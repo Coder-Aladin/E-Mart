@@ -1,0 +1,334 @@
+/* Favourite Section */
+.sec-favourite {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.sec-favourite .heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.sec-favourite .heading span {
+    color: #ff6b6b;
+}
+
+/* Favourite Container - Responsive Grid */
+.favourite-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Favourite Card Styling */
+.favourite-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: slideIn 0.5s ease-out;
+}
+
+.favourite-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* Image Wrapper */
+.favourite-card .img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.favourite-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.favourite-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Save Button in Favourite Card */
+.save-btn-favourite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 107, 107, 0.9);
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn-favourite:hover {
+    background: rgba(255, 107, 107, 1);
+    transform: scale(1.1);
+}
+
+.remove-favourite {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Product Info */
+.favourite-card .product-info {
+    padding: 1.2rem;
+}
+
+.favourite-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.favourite-card .category {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.4rem;
+}
+
+.favourite-card .rating {
+    font-size: 0.9rem;
+    color: #ff9800;
+    margin-bottom: 0.4rem;
+}
+
+.favourite-card .rating i {
+    margin-right: 4px;
+}
+
+.favourite-card .price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin-bottom: 0.3rem;
+}
+
+.favourite-card .discount {
+    font-size: 0.8rem;
+    color: #666;
+    background: #fff3cd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Button Box */
+.favourite-card .btn-box {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 1.2rem;
+    border-top: 1px solid #eee;
+}
+
+.favourite-card .btn {
+    flex: 1;
+    padding: 0.6rem;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    background: white;
+    color: #ff6b6b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: block;
+}
+
+.favourite-card .btn:first-child {
+    background: #ff6b6b;
+    color: white;
+}
+
+.favourite-card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Empty Message */
+.empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #999;
+}
+
+.empty-message i {
+    font-size: 4rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.empty-message h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.empty-message p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.empty-message .btn {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.empty-message .btn:hover {
+    background: #e55a5a;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .favourite-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .sec-favourite .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .favourite-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .sec-favourite {
+        padding: 3rem 1rem;
+    }
+
+    .sec-favourite .heading {
+        font-size: 1.8rem;
+    }
+
+    .favourite-card .img-wrapper {
+        height: 160px;
+    }
+
+    .favourite-card .product-info {
+        padding: 0.8rem;
+    }
+
+    .favourite-card .btn-box {
+        padding: 0.7rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .favourite-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .sec-favourite {
+        padding: 2rem 1rem;
+    }
+
+    .sec-favourite .heading {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .favourite-card .img-wrapper {
+        height: 140px;
+    }
+
+    .favourite-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .favourite-card .category,
+    .favourite-card .rating {
+        font-size: 0.8rem;
+    }
+
+    .favourite-card .price {
+        font-size: 1.1rem;
+    }
+
+    .favourite-card .btn-box {
+        flex-direction: column;
+        padding: 0.6rem;
+    }
+
+    .favourite-card .btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .empty-message {
+        padding: 2rem 1rem;
+    }
+
+    .empty-message i {
+        font-size: 3rem;
+    }
+
+    .empty-message h3 {
+        font-size: 1.3rem;
+    }
+
+    .empty-message p {
+        font-size: 0.9rem;
+    }
+}

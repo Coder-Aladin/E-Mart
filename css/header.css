@@ -52,6 +52,11 @@ header .panel-2 .icon-box .icon{
     margin: 0 3px;
 }
 
+header .panel-2 .icon-box a.icon{
+    text-decoration: none;
+    color: #666;
+}
+
 header .panel-2 .icon-box .icon span{
     margin-left: 5px;
     display: none;

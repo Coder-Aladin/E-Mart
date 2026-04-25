@@ -13,35 +13,65 @@
 }
 
 .sec-product .box-container .product-wrapper .product-card{
-    background-color: #FFF;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
-    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    gap: .5rem;
+    gap: 0;
     flex-direction: column;
-    align-items: center;
-    outline: 1px solid #999;
-    outline-offset: -7px;
-    transition: all .2s linear;
+    align-items: stretch;
+    transition: all 0.3s ease;
     height: inherit;
+    animation: slideIn 0.5s ease-out;
 }
 
 .sec-product .box-container .product-wrapper .product-card:hover{
-    outline: 1px solid var(--main-color);
-    outline-offset: 0px;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .sec-product .box-container .product-wrapper .product-card .save-Btn{
    position: absolute;
-   top: 12px;
-   right: 12px;
+   top: 10px;
+   right: 10px;
+   background: rgba(255, 107, 107, 0.9);
+   padding: 8px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    cursor: pointer;
+   transition: all 0.3s ease;
+   z-index: 10;
+}
+
+.sec-product .box-container .product-wrapper .product-card .save-Btn:hover{
+    background: rgba(255, 107, 107, 1);
+    transform: scale(1.1);
+}
+
+.sec-product .box-container .product-wrapper .product-card .save-Btn i{
+    color: white;
+    font-size: 1.2rem;
 }
 
 .sec-product .box-container .product-wrapper .product-card img{
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .sec-product .box-container .product-wrapper .product-card .content{
@@ -49,40 +79,56 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: .5rem;
+    padding: 1rem;
+    position: relative;
 }
 
 .product-wrapper .product-card .content h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.5rem;
 }
 
 .product-wrapper .product-card .content .cat{
-    color: #666;
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
 }
 
 .product-wrapper .product-card .content .rat{
-    margin-top: 10px;
+    margin: 0.4rem 0;
     line-height: 1.5;
-    font-size: 1.25rem;
+    font-size: 0.9rem;
+    color: #ff9800;
 }
 
-
 .product-wrapper .product-card .content .rat i{
-    color: darkorange;
+    color: #ff9800;
+    margin-right: 4px;
 }
 
 .product-wrapper .product-card .content .discount{
-    margin: 5px 0;
+    margin: 0.4rem 0;
     line-height: 1.5;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    color: #333;
+    color: #666;
+    background: #fff3cd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .product-wrapper .product-card .content .price{
-    margin-bottom: 2px;
+    margin-bottom: 0;
     font-size: 1.2rem;
+    font-weight: 700;
     color: var(--main-color);
 }
 
@@ -90,11 +136,30 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-top: 1px solid #eee;
 }
 
 .product-wrapper .product-card .btn-box a{
-    width: 50%;
+    flex: 1;
+    width: auto;
     text-align: center;
-    padding: 2px 0;
-    font-size: 1rem;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    background: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.product-wrapper .product-card .btn-box a:first-child{
+    background: var(--main-color);
+    color: white;
+}
+
+.product-wrapper .product-card .btn-box a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }

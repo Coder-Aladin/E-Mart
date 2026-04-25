@@ -4,35 +4,47 @@
 }
 
 .sec-cat .cat-container .box-container .box{
-    background-color: #FFF;
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
-    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
     display: flex;
-    gap: 15px;
+    gap: 0;
     flex-direction: column;
-    align-items: center;
-    outline: 1px solid #999;
-    outline-offset: -7px;
-    transition: all .2s linear;
+    align-items: stretch;
+    transition: all 0.3s ease;
 }
 
 .sec-cat .cat-container .box-container .box:hover{
-    outline: 1px solid var(--main-color);
-    outline-offset: 0px;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sec-cat .box-container .box img{
     height: 200px;
-    width: 200px;
+    width: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.sec-cat .box-container .box h3{
+    padding: 1rem 1rem 0.5rem 1rem;
+    color: #333;
+    font-size: 1.1rem;
 }
 
 .sec-cat .box-container .box p{
     text-align: center;
     color: #666;
     line-height: 1.5;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
 
 .sec-cat .box-container .box a{
-    padding: 3px 6px;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-top: 1px solid #eee;
+    border-radius: 0;
 }

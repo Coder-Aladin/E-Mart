@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E - Mart / Facourite products</title>
+    <title>E - Mart / Favourite Products</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
@@ -11,24 +11,33 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
     <link rel="stylesheet" href="css/universal.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/favourite.css">
 
 </head>
 <body>
     
     <div class="header">
-    <div class="logo">
-        <i class="material-symbols-outlined">shopping_cart</i>
-        <p>e - mart</p>
+        <div id="login-box"></div>
+        <header>
+            <div id="navbar"></div>
+        </header>
     </div>
-</div>
 
+    <section class="sec-favourite" id="sec-favourite">
+        <h2 class="heading">favourite <span>products</span></h2>
+        
+        <div class="favourite-container" id="favourite-container">
+            <!-- Saved products will be displayed here -->
+        </div>
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/component.js"></script>
     <script src="js/header.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/favourite.js"></script>
 </body>
 </html>
