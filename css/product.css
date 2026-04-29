@@ -68,10 +68,12 @@
 }
 
 .sec-product .box-container .product-wrapper .product-card img{
-    height: 180px;
+    height: 250px;
     width: 100%;
     object-fit: cover;
     display: block;
+    background-size: cover;
+    background-position: center;
 }
 
 .sec-product .box-container .product-wrapper .product-card .content{
